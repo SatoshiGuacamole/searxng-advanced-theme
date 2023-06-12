@@ -10,8 +10,10 @@
             .forEach(siblingInput => {
               siblingInput.checked = false;
             });
-  
-          input.form.submit();
+          
+          if (input.form.querySelector('#q')?.value) {
+            input.form.submit();
+          }
         });
       });
   });
