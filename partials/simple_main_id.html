@@ -1,0 +1,7 @@
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  const mainElement = document.querySelector('main[id^="main_advanced"]');
+  
+  mainElement.id = mainElement.id.replace(/main_advanced\//, 'main_');
+});
+</script>
