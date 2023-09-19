@@ -1,3 +1,4 @@
+{% if get_setting('ui.advanced_search') is sameas true %}
 <script defer>
   document.addEventListener("DOMContentLoaded", () => {
     [...document.querySelectorAll('#advanced_search :where(input[type="checkbox"], select)')]
@@ -13,3 +14,4 @@
     document.querySelector('#advanced_search').style.display = 'block';
   });
 </script>
+{% endif %}
