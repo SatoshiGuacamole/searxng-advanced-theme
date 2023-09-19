@@ -1,4 +1,3 @@
-{% if 'searx.plugins.search_on_category_select' in request.preferences.plugins.get_enabled() %}
 <script defer>
   document.addEventListener("DOMContentLoaded", () => {
     [...document.querySelectorAll('#categories_container > .category > input[type="checkbox"]')]
@@ -18,4 +17,3 @@
       });
   });
 </script>
-{% endif %}
